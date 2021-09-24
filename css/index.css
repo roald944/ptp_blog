@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    padding    : 0;
+    margin     : 0;
+    font-family: 'Poppins';
+    cursor     : default;
+    transition : .3s ease;
+    box-sizing : border-box;
+}
+
+button,
+a,
+input[type='submit'] {
+    font-size     : 1.1em;
+    font-weight   : 700;
+    letter-spacing: 1.5px;
+    cursor        : pointer;
+    border        : none;
+    outline       : none;
+}
+
+button:hover {
+    box-shadow: 0 1px 5px 0px royalblue;
+    color     : royalblue;
+}
+
+button:active {
+    transition: 0;
+    box-shadow: 0 1px 5px 0px royalblue inset;
+}
+
+input[type="search"],
+input[type="text"],
+input[type="password"] {
+    font-size     : 1.1em;
+    font-weight   : 600;
+    letter-spacing: 1.5px;
+    cursor        : text;
+    border        : none;
+    outline       : none;
+    border-radius : 5px;
+    padding       : 5px;
+}
+
+body {
+    height        : 150vh;
+    width         : 100vw;
+    padding-bottom: 50px;
+    margin-bottom : 50px;
+}
+
+body::-webkit-scrollbar {
+    display   : none;
+    visibility: none;
+}
+
+.container {
+    height: 100%;
+    width : 100%;
+}
+
+header {
+    padding   : 3ex;
+    text-align: center;
+}
+
+nav {
+    position       : sticky;
+    top            : 0;
+    width          : 100%;
+    padding        : 5px 20px 5px 20px;
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    flex-wrap      : wrap;
+}
+
+nav a {
+    color          : green;
+    letter-spacing : 1.5px;
+    font-size      : 1.3em;
+    font-weight    : 600;
+    text-decoration: none;
+    padding        : 5px;
+}
+
+nav .btns {
+    display        : flex;
+    justify-content: stretch;
+    align-items    : center;
+    gap            : 20px;
+    flex-wrap      : wrap;
+}
+
+nav .btns button {
+    padding      : 5px;
+    border-radius: 5px;
+}
+
+.stickytop {
+    box-shadow      : 0 5px 50px 0px gainsboro;
+    background-color: white;
+}
+
+.content {
+    margin : 10px;
+    padding: 10px;
+}
+
+.nav_content {
+    width           : 100%;
+    display         : flex;
+    flex-wrap       : wrap;
+    justify-content : center;
+    align-items     : center;
+    padding         : 1em;
+    gap             : 1em;
+    background-color: #0004;
+    border-radius   : 5px;
+}
+
+.nav_content .btns {
+    width          : fit-content;
+    display        : flex;
+    justify-content: stretch;
+    align-items    : center;
+    gap            : 20px;
+}
+
+.nav_content .btns button {
+    background-color: none;
+    background      : none;
+    letter-spacing: 5px;
+}
+
+.nav_content .btns button:hover {
+    box-shadow    : none;
+    /* text-shadow: 1px 1px 1.5px black; */
+    color         : orangered;
+}
+
+.active {
+    color      : orangered;
+    text-shadow: 1.2px 1.2px 0px black;
+
+}
+
+/*  ?? dont just dont.
+.nav_content .searchbox {
+    width          : fit-content;
+    display        : flex;
+    justify-content: stretch;
+    align-items    : center;
+    gap            : 5px;
+}
+
+.nav_content .searchbox button {
+    background      : none;
+    background-color: none;
+    padding: 5px;
+} */
+
+.tab_content {
+    margin-top   : 20px;
+    padding      : 10px;
+    border-radius: 5px;
+    box-shadow   : 0px 1px 15px 0px gainsboro;
+}
+
+.tab_content>div {
+    padding: 10px;
+    width  : 100%;
+}
+
+.tab_content>div>div {
+    border       : 1px solid black;
+    border-radius: 5px;
+    display      : grid;
+    gap          : 15px;
+    padding      : 10px;
+}
+
+.tab_content>div h3 {
+    padding         : 5px;
+    margin-top      : 5px;
+    margin-bottom   : 5px;
+    border-radius   : 5px;
+    letter-spacing  : 1.5px;
+    background-color: gray;
+    color           : white;
+}
+
+.tab_content>div div p {
+    padding   : 5px;
+    text-align: justify;
+}
+
+details {
+    padding-left: 20px;
+}
+
+summary {
+    font-weight   : 600;
+    letter-spacing: 1.5px;
+    cursor        : pointer;
+}

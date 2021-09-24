@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <!--  ?? dont mind this
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+    <title>WebPG</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome</h1>
+        </header>
+        <nav>
+            <a href="">Official Link</a>
+            <div class="btns">
+                <button>Home</button>
+                <button>About</button>
+                <button>Team</button>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="nav_content">
+                <div class="btns">
+                    <button id="showannc">Announcements</button>
+                    <button id="showevents">Events</button>
+                    <button id="showposts">Posts</button>
+                </div>
+                <!-- ?? this is usesless
+                     <div class="searchbox"> 
+                    <input type="search" name="" id="" placeholder="Search">
+                    <button>Search</button>
+                </div> -->
+            </div>
+            <div class="tab_content">
+                <div class="tab-announcements">
+                    <h3>Announcements</h3>
+                    <div class="load_announcement">
+                        <h4>Title</h4>
+                        <h5>Date / Time</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, sunt, fugit neque rem
+                            doloribus voluptate impedit inventore eveniet, corporis quidem ipsa illo. Adipisci sunt
+                            perspiciatis laborum est officiis unde assumenda.</p>
+                    </div>
+                </div>
+                <div class="tab-events">
+                    <h3>Events</h3>
+                    <div class="load_events">
+                        <h4>Daily Issues</h4>
+                        <h5>Date / Time posted</h5>
+                        <details>
+                            <summary>School Events</summary>
+                        </details>
+                    </div>
+                </div>
+                <div class="tab-posts">
+                    <h3>Posts</h3>
+                    <div class="load_posts">
+                        <h4>Daily Issues</h4>
+                        <h5>Date / Time posted</h5>
+                        <h5>Author</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur blanditiis, nostrum
+                            nulla perferendis quos dignissimos ut voluptatum maxime qui saepe recusandae voluptas
+                            maiores voluptatem in natus debitis magnam sed laboriosam?
+                        </p>
+                        <details>
+                            <summary>Comments</summary>
+                            <span>
+                                <p class="loadcomments"></p>
+                            </span>
+                            <span>
+                                <input type="text" name="" id="">
+                                <button>Send</button>
+                            </span>
+                        </details>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/user_interaction.js"></script>
+</body>
+
+</html>
